@@ -6,6 +6,12 @@
   <title>Gimnasio</title>
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    #intro {
+      background-image: url("https://cdn.static.aptavs.com/imagenes/ejercicios-basicos-de-gimnasio-cuales-son-y-su-importancia/ejercicios-basicos-de-gimnasio.jpg");
+      height: 100vh;
+    }
+  </style>
 </head>
 
 <body>
@@ -32,7 +38,7 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contacto.js">Contacto</a>
+            <a class="nav-link" href="contacto.html">Contacto</a>
           </li>
           <li class="nav-item">
             <button type="button" class="btn btn-warning">Acceso Cliente</button>
@@ -41,7 +47,7 @@
       </div>
     </div>
   </nav>
-
+  <!--
   <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
   <div class="carousel-indicators">
@@ -82,32 +88,64 @@
     <span class="carousel-control-next-icon"></span>
   </button>
 </div>
-
-<footer class="bg-dark text-light text-center p-3">
-  
-  <div class="redes">
-    <a href="https://www.instagram.com/" target="_blank" class="text-light me-3">
-      <i class="fab fa-instagram"></i> Instagram
-    </a>
-    <a href="https://twitter.com/" target="_blank" class="text-light me-3">
-      <i class="fab fa-twitter"></i> Twitter
-    </a>
-    <a href="https://www.facebook.com/" target="_blank" class="text-light">
-      <i class="fab fa-facebook"></i> Facebook
-    </a>
+-->
+  <div id="intro" class="bg-image h-100">
+    <div class="mask" style="background-color: rgba(12, 254, 125, 0.5); width: 50%"> <!--rgba(59, 68, 84, 0.5)-->
+      <div class="container full-height col-6 col-sm-6 col-md-8 col-lg-12">
+        <div class="form-container text-white" data-mdb-theme="dark">
+          <form>
+            <div class="mb-3">
+              <label for="Nombre" class="form-label">Nombre:</label>
+              <input type="Nombre" class="form-control" id="Nombre" placeholder="Nombre" name="Nombre">
+            </div>
+            <div class="mb-3">
+              <label for="Apellidos" class="form-label">Apellidos:</label>
+              <input type="Apellidos" class="form-control" id="Apellidos" placeholder="Apellidos" name="Apellidos">
+            </div>
+            <div class="mb-3">
+              <label for="Email" class="form-label">Email:</label>
+              <input type="Email" class="form-control" id="Email" placeholder="Correo electrónico" name="Email">
+            </div>
+            <div class="mb-3">
+              <label for="Mensaje">Mensaje:</label>
+              <textarea class="form-control" id="Mensaje" placeholder="Mensaje" name="Mensaje" rows="5"></textarea>
+            </div>
+            <button type="submit" class="mb-4 btn btn-warning">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
+
+
+
+
+  <footer class="bg-dark text-light text-center p-3">
+
+    <div class="redes">
+      <a href="https://www.instagram.com/" target="_blank" class="text-light me-3">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+      <a href="https://twitter.com/" target="_blank" class="text-light me-3">
+        <i class="fab fa-twitter"></i> Twitter
+      </a>
+      <a href="https://www.facebook.com/" target="_blank" class="text-light">
+        <i class="fab fa-facebook"></i> Facebook
+      </a>
+    </div>
 
     <p>Dirección: Calle Ejemplo 123, Ciudad</p>
     <p>Email: <a href="mailto:info@gimnasio.com" class="text-light">info@gimnasio.com</a></p>
-    
+
 
     <p>
-      <a href="#" class="text-light">Avisos Legales</a> | 
+      <a href="#" class="text-light">Avisos Legales</a> |
       <a href="#" class="text-light">Contáctanos</a>
     </p>
-    
+
     <p>&copy; 2024 Gimnasio. Todos los derechos reservados.</p>
-  
-</footer>
+
+  </footer>
 </body>
+
 </html>
