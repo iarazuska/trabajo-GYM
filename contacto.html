@@ -11,6 +11,10 @@
       background-image: url("https://cdn.static.aptavs.com/imagenes/ejercicios-basicos-de-gimnasio-cuales-son-y-su-importancia/ejercicios-basicos-de-gimnasio.jpg");
       height: 100vh;
     }
+
+    #mask {
+      align-items: center;
+    }
   </style>
 </head>
 
@@ -90,10 +94,10 @@
 </div>
 -->
   <div id="intro" class="bg-image h-100">
-    <div class="mask" style="background-color: rgba(12, 254, 125, 0.5); width: 50%"> <!--rgba(59, 68, 84, 0.5)-->
-      <div class="container full-height col-6 col-sm-6 col-md-8 col-lg-12">
-        <div class="form-container text-white" data-mdb-theme="dark">
-          <form>
+    <div class="mask">
+      <div class="container-fluid col-8 col-sm-8 col-md-6 col-lg-4">
+        <div class="form-container text-white py-4">
+          <form class="rounded border border-white" style="background-color: rgba(59, 68, 84, 0.5); padding: 5%">
             <div class="mb-3">
               <label for="Nombre" class="form-label">Nombre:</label>
               <input type="Nombre" class="form-control" id="Nombre" placeholder="Nombre" name="Nombre">
@@ -110,7 +114,9 @@
               <label for="Mensaje">Mensaje:</label>
               <textarea class="form-control" id="Mensaje" placeholder="Mensaje" name="Mensaje" rows="5"></textarea>
             </div>
-            <button type="submit" class="mb-4 btn btn-warning">Enviar</button>
+            <div class="d-grip gap-2">
+            <button type="submit" class="mb-4 btn btn-warning" style="width: 100%">Enviar</button>
+          </div>
           </form>
         </div>
       </div>
