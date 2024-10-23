@@ -12,11 +12,12 @@
 			height: 100vh;
 		}
         form {
-        background: rgba(28,43,75,0.4);
+        background: rgba(59,68,84,0.5);
         }
         body {
         color: #ffffff
         }
+
     </style>
 </head>
 
@@ -58,22 +59,24 @@
 </nav>
 
 <div id="intro" class="bg-image h-100">
-    <div class="container-fluid col-4 centro py-2">
-        <form class="rounded">
-            <div class="mb-3">
+    <div class="container-fluid col-4 py-4">
+        <form class="rounded border border-white" style="padding: 5%;">
+            <h2 style="padding-top: 5%; text-align: center;">INICIAR SESIÓN</h2>
+            <div class="mb-3" style="padding-top: 5%;">
                 <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
-                <input placeholder="micorreo@midominio.es" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <input placeholder="micorreo@midominio.es" type="email" class="form-control" id="exampleInputEmail1"
+                       aria-describedby="emailHelp">
             </div>
             <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Contraseña</label>
                 <input placeholder="contras€ñaSegur@_1" type="password" class="form-control" id="exampleInputPassword1">
             </div>
             <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Recuérdeme</label>
-                <a class="link-warning" href="#">¿Ha olvidado su contraseña?</a>
+                <input type="checkbox" class="form-check-input" id="recuerda">
+                <label class="form-check-label" for="recuerda">Recuérdeme</label>
+                <a class="link-warning" href="#" style="float: right;">¿Ha olvidado su contraseña?</a>
             </div>
-            <button type="submit" class="btn btn-warning">Iniciar sesión</button>
+            <button type="submit" class="btn btn-warning" style="text-align: center; width: 100%;">Iniciar sesión</button>
         </form>
 
     </div>
