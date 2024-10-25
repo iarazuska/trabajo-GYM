@@ -13,7 +13,7 @@
         }
         a {
       text-decoration: none;
-    }
+        } 
     .dropdown-menu {
             background-color: #212529; /* Cambia el color aquí */
         }
@@ -21,9 +21,23 @@
             color: #fff; /* Color de las letras */
         }
         .dropdown-item:hover {
-            background-color: #333; /* Color de fondo al pasar el ratón */
-            color: #FFD700; /* Color de las letras al pasar el ratón */
+            background-color: #333; 
+            color: #FFD700;
         }
+        card {
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: scale(1.05); 
+        }
+        .card:hover .card-img-top {
+            opacity: 1; 
+        }
+
+      .card:hover h4 {
+          color: #d1b200; 
+        }
+
 
     </style>
 </head>
