@@ -6,6 +6,16 @@
   <title>Gimnasio</title>
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    #intro {
+      background-image: url("/public/fondo_contacto.jpg");
+      height: 100vh;
+    }
+
+    #mask {
+      align-items: center;
+    }
+  </style>
 </head>
 
 <body>
@@ -27,12 +37,12 @@
               Servicios
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Máquinas</a></li>
+              <li><a class="dropdown-item" href="#">Maquinas</a></li>
               <li><a class="dropdown-item" href="#">Curso</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contacto.js">Contacto</a>
+            <a class="nav-link" href="contacto.html">Contacto</a>
           </li>
           <li class="nav-item">
             <button type="button" class="btn btn-warning">Acceso Cliente</button>
@@ -41,73 +51,65 @@
       </div>
     </div>
   </nav>
-
-  <div id="demo" class="carousel slide" data-bs-ride="carousel">
-
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-  </div>
-
-  <div class="carousel-inner">
-    <div class="carousel-item active" data-bs-interval="1000">
-      <img src="https://www.w3schools.com/bootstrap/la.jpg" alt="Los Angeles" class="d-block" style="width:100%">
-      <div class="carousel-caption">
-        <h3>Los Angeles</h3>
-        <p>We had such a great time in LA!</p>
-      </div>
-    </div>
-    <div class="carousel-item" data-bs-interval="2000">
-      <img src="https://www.w3schools.com/bootstrap/chicago.jpg" alt="Chicago" class="d-block" style="width:100%">
-      <div class="carousel-caption">
-        <h3>Chicago</h3>
-        <p>Thank you, Chicago!</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="https://www.w3schools.com/bootstrap/ny.jpg" alt="New York" class="d-block" style="width:100%">
-      <div class="carousel-caption">
-        <h3>New York</h3>
-        <p>We love the Big Apple!</p>
-      </div>
-    </div>
-  </div>
-
-
-  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </button>
-</div>
-
-<footer class="bg-dark text-light text-center p-3">
   
-  <div class="redes">
-    <a href="https://www.instagram.com/" target="_blank" class="text-light me-3">
-      <i class="fab fa-instagram"></i> Instagram
-    </a>
-    <a href="https://twitter.com/" target="_blank" class="text-light me-3">
-      <i class="fab fa-twitter"></i> Twitter
-    </a>
-    <a href="https://www.facebook.com/" target="_blank" class="text-light">
-      <i class="fab fa-facebook"></i> Facebook
-    </a>
+  <div id="intro" class="bg-image h-100">
+    <div class="mask">
+      <div class="container-fluid col-8 col-sm-8 col-md-6 col-lg-4">
+        <div class="form-container text-white py-4">
+          <form class="rounded border border-white" style="background-color: rgba(59, 68, 84, 0.5); padding: 5%">
+            <div class="mb-3">
+              <label for="Nombre" class="form-label">Nombre:</label>
+              <input type="Nombre" class="form-control" id="Nombre" placeholder="Nombre" name="Nombre">
+            </div>
+            <div class="mb-3">
+              <label for="Apellidos" class="form-label">Apellidos:</label>
+              <input type="Apellidos" class="form-control" id="Apellidos" placeholder="Apellidos" name="Apellidos">
+            </div>
+            <div class="mb-3">
+              <label for="Email" class="form-label">Email:</label>
+              <input type="Email" class="form-control" id="Email" placeholder="Correo electrónico" name="Email">
+            </div>
+            <div class="mb-3">
+              <label for="Mensaje">Mensaje:</label>
+              <textarea class="form-control" id="Mensaje" placeholder="Mensaje" name="Mensaje" rows="5"></textarea>
+            </div>
+            <div class="d-grip gap-2">
+            <button type="submit" class="mb-4 btn btn-warning" style="width: 100%">Enviar</button>
+          </div>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
+
+
+
+
+  <footer class="bg-dark text-light text-center p-3">
+
+    <div class="redes">
+      <a href="https://www.instagram.com/" target="_blank" class="text-light me-3">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+      <a href="https://twitter.com/" target="_blank" class="text-light me-3">
+        <i class="fab fa-twitter"></i> Twitter
+      </a>
+      <a href="https://www.facebook.com/" target="_blank" class="text-light">
+        <i class="fab fa-facebook"></i> Facebook
+      </a>
+    </div>
 
     <p>Dirección: Calle Ejemplo 123, Ciudad</p>
     <p>Email: <a href="mailto:info@gimnasio.com" class="text-light">info@gimnasio.com</a></p>
-    
+
 
     <p>
-      <a href="#" class="text-light">Avisos Legales</a> | 
+      <a href="#" class="text-light">Avisos Legales</a> |
       <a href="#" class="text-light">Contáctanos</a>
     </p>
-    
+
     <p>&copy; 2024 Gimnasio. Todos los derechos reservados.</p>
-  
-</footer>
+
+  </footer>
 </body>
 </html>
